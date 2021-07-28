@@ -1,6 +1,3 @@
-# tripsero-squadc
+# tripsero
 
 Webapp using django+sqlite+bootstrap.
-
-- Aviral Kumar Srivastava
-- Varun bhiwapurkar
