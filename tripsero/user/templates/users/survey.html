@@ -1,0 +1,18 @@
+{% extends 'users/header.html' %} {% block content %}
+
+<div class="listbox">
+	<legend>Questions</legend>
+	<h1>Q1. What inspires you to travel?</h1>
+	<form method="POST">
+		<fieldset>
+			{% csrf_token %}{% for i in form %}
+			<ul class="list-group">
+				<li class="list-group-item"><p>{{i}}</p></li>
+			</ul>
+			{% endfor %}
+		</fieldset>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+{% endblock %}
